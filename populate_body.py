@@ -11,7 +11,7 @@ table_create = """CREATE TABLE explained (
 )"""
 
 c = conn.cursor()
-# c.execute(table_create)
+c.execute(table_create)
 
 c = conn.cursor()
 c.execute("""SELECT explained_link, comic_number FROM comics""")
